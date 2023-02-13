@@ -1,0 +1,108 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+ * {
+    margin: 0;
+ }
+body {
+    z-index: 0;
+    height: auto;
+    background-color: var(--backgrond);
+    color: var(--text-color);
+        background: url(./asset/blur-1.png) no-repeat bottom left,
+                   url(./asset/blur-2.png) no-repeat top right; 
+                   background-color: var(--backgrond);
+                   background-size: 50%;       
+}
+span {
+    color: var(--backgrond);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+header .mobile {
+    display:none;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    justify-content: space-around;
+    padding: 40px 90px;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+main .mobile {
+    display: none;
+}
+header ul {
+    display:flex;
+    justify-content:space-evenly;
+    list-style: none;
+    width: 40vw;
+}
+header ul li:hover{
+    color: var(--button);
+    cursor:pointer;
+
+}
+header button:hover {
+    color: var(--backgrond);
+    cursor:pointer;
+    background-color: var(--button);
+
+}
+header button {
+    transition:all 0.3s;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--button);
+    border-radius: 10px;
+    width: 14rem;
+    height: 80%;
+    font-weight: bolder;
+}
+main {
+    margin-top: 5vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+
+}
+main h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.main_mobile {
+    display: none;
+}
+
+@keyframes fadeInOut {
+    100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    0% {
+      opacity: 0.5;
+    }
+  }
+
+    
+  main h1 span {
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
+  
+
+  
+    

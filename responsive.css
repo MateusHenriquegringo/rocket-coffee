@@ -1,0 +1,66 @@
+
+@media screen and (max-width: 760px) {
+    body {
+        height: auto;
+        width: 100vw;
+        background-image: url(./asset/blur-mobile.png);
+        background-position: bottom;
+        background-size: 100vw;
+    }
+    header .desktop {
+        display: none;
+    }
+    header {
+        padding: 0;
+        justify-content: space-between;
+        margin: 0 15px 0 15px;
+    }
+    header .mobile {
+        display: flex;
+    }
+    header #hide {
+        display: none;
+    }
+    header button {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .main_mobile {
+        display: flex;
+        align-items: center;
+        margin-top: 15vh;
+        font-family:'Manrope';
+        width: 100vw;
+    }
+    .main_mobile p {
+        font-size: 2rem;
+        font-family: 'Manrope';
+        font-weight: lighter;
+        text-align: center;
+        padding: 15px;
+    }
+    .main_mobile button {
+        background-color: transparent;
+        color: var(--text-color);
+        border: 1px solid var(--button);
+        font-weight: bolder;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        height: 40px;
+        width: 50%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        }
+    .main_mobile h1 {
+        font-size: 12vw;
+       
+    }
+    .main_mobile :nth-child(4) {
+        width: 100vw;
+    }
+    }

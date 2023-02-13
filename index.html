@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Coffee</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">       
+</head>
+<body>
+   
+
+    <header>
+     <img class="desktop" src="./asset/logo-desktop.svg" alt="">
+     <img class="mobile" src="./asset/logo-mobile.svg" alt="">
+     <img class="mobile" src="./asset/menu-buguer-open.svg" alt="" onclick="openModal()">
+       
+        <div id="modal" >
+            <div id="modal_header">
+                <img class="mobile" src="./asset/logo-mobile.svg" alt="">
+                <img id = "modal_close" class="mobile" src="./asset/menu-buguer-close.svg" alt="" onclick="openModal()">
+            </div>    
+             <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Recompensas</li>
+                <li>Gift Cards</li>
+                <li>Lojas</li>
+             </ul>           
+        </div>
+
+        <ul id="hide">
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Recompensas</li>
+            <li>Gift Cards</li>
+            <li>Lojas</li>
+        </ul>
+
+        <button>
+            PEGAR MEU CAFÉ
+        </button>
+    </header>
+    <main class="desktop">
+        <h1>
+            Great Coffe
+        <span> &lt; Great Code /&gt; </span>
+        </h1>
+        <img src="asset/Img Coffee.png" alt="">
+    </main>
+
+    <main class="main_mobile">
+        <p>
+            O café que fará seu código decolar para 
+o próximo nível.
+        </p>
+        <button>
+            PEGAR MEU CAFÉ <img src="./asset/arrow.svg" alt="">
+        </button>
+        <h1>
+            Great Coffe
+        <span> &lt; Great Code /&gt; </span>
+        </h1>
+        <img src="./asset/rocket-coffee.png" alt="">
+    </main>
+    </main>
+      
+    <script src="./index.js"></script>
+</body>
+</html>
